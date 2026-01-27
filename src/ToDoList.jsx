@@ -1,6 +1,7 @@
 import './ToDoList.css'
 import { useState, useEffect } from 'react'
 import { addTask, getTasks, deleteTask, upDateTask } from './components/toDoList'
+import taskImg from './assets/icon.jpg'
 
 
 
@@ -68,7 +69,12 @@ function ToDoList() {
   return (
     <div className="app-container" id="">
       <main className="to-selection">
-        <h2 className="selection-title">All Tasks</h2>
+        <div className="title-img">
+          <h2 className="selection-title">
+            All Tasks
+          <img className='task-img' src={taskImg} alt="" srcset="" />
+        </h2></div>
+
         <div className="todo-list">
           <div className="add-task">
             <input type="text"
