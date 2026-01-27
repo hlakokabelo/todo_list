@@ -36,8 +36,8 @@ Live demo:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd todo-app
+git clone https://github.com/hlakokabelo/todo_list.git
+cd todo_app
 ```
 
 ### 2. Install dependencies
