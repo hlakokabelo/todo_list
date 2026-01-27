@@ -1,8 +1,3 @@
-Ahh, behold—your digital task forge.
-A tiny kingdom where chaos is banished one checkbox at a time. 🗡️
-Here’s a clean, professional, *slightly legendary* README for your project:
-
----
 
 # 📝 Todo List App (React + Appwrite)
 
