@@ -1,5 +1,6 @@
 import { db } from '../appwriteConfig'
 import { ID } from 'appwrite'
+
 export const upDateTask = async (data) => {
     try {
         const response = await db.updateRow({

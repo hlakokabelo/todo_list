@@ -1,9 +1,0 @@
-/**export const pass = {
-    VITE_APPWRITE_PROJECT_ID: '6978b8ae001d26f34f9b'
-    , VITE_APPWRITE_PROJECT_NAME: 'todo-list'
-    , VITE_APPWRITE_ENDPOINT: 'https://syd.cloud.appwrite.io/v1'
-    , VITE_APPWRITE_DB_ID: '6978b8ed000c7701f094'
-    , VITE_APPWRITE_TABLE_TODO_lIST: 'todo-list'
-}**/
-
-
