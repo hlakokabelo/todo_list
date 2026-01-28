@@ -11,6 +11,7 @@ function ToDoList() {
   const [todos, setTodos] = useState([])
   const [newTask, setNewTask] = useState('')
   useEffect(() => {
+    
     handleGetTasks()
   }, [])
 
@@ -20,7 +21,6 @@ function ToDoList() {
   }
 
   function handleInputChange(event) {
-    console.log(event.target.value)
     setNewTask(event.target.value)
   }
   const handleAddTask = async () => {
@@ -32,7 +32,7 @@ function ToDoList() {
       }
       try {
         const response = await addTask(task)
-        console.log(response)
+       
         task.id = response.$id
         setTodos(t => [...t, task])
       } catch (error) {

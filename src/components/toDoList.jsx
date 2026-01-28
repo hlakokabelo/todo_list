@@ -9,10 +9,9 @@ export const upDateTask = async (data) => {
             rowId: data.$id,
             data: data
         });
-        console.log(response)
         return response
     } catch (error) {
-        console.log(error)
+        return error
 
     }
 }
@@ -26,7 +25,7 @@ export const addTask = async (data) => {
         });
         return response
     } catch (error) {
-        console.log(error)
+       return (error)
 
     }
 }
@@ -47,7 +46,7 @@ export const deleteTask = async (data) => {
 
 export const getTasks = async () => {
     try {
-
+    
         //total rows
         const { total, rows } = await db.listRows({
             databaseId: import.meta.env.VITE_APPWRITE_DB_ID
@@ -57,7 +56,6 @@ export const getTasks = async () => {
 
         return rows;
     } catch (error) {
-        console.log(error)
         return []
     }
 }
