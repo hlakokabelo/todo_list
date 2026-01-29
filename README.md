@@ -1,7 +1,7 @@
 
 # 📝 Todo List App (React + Appwrite)
 
-A modern, full-stack **Todo List application** built with **React** on the frontend and **Appwrite** as the backend & database.
+full-stack **Todo List application** built with **React** on the frontend and **Appwrite** as the backend & database.
 Create tasks, mark them complete, and delete them — all in real time.
 
 Live demo:
