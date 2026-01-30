@@ -7,7 +7,7 @@ export const clientCred = {
   PROJECT_NAME: import.meta.env.VITE_APPWRITE_PROJECT_NAME,
   ENDPOINT: import.meta.env.VITE_APPWRITE_ENDPOINT,
   DB_ID: import.meta.env.VITE_APPWRITE_DB_ID,
-  TABLE_ID_TO_DO_LIST: import.meta.env.VITE_APPWRITE_TABLE_ID_TO_DO_lIST,
+  TABLE_ID_TO_DO_LIST: import.meta.env.VITE_APPWRITE_TABLE_ID_TO_DO_LIST,
 };
 
 const client = new Client();

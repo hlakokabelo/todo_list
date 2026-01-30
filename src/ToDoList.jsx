@@ -23,6 +23,7 @@ function ToDoList() {
   function handleInputChange(event) {
     setNewTask(event.target.value)
   }
+  
   const handleAddTask = async () => {
     if (newTask !== '') {
       const task = {
