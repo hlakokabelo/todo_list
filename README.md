@@ -1,4 +1,4 @@
-
+## 🎯 v1.0 
 # 📝 Todo List App (React + Appwrite)
 
 full-stack **Todo List application** built with **React** on the frontend and **Appwrite** as the backend & database.
