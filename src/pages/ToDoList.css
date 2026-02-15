@@ -12,12 +12,28 @@ body {
   color: #e5e7eb;
 }
 
+.title-img {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+/**  Task image*/
+
+.task-img {
+  border: 1px solid #be3d5b;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 15px;
+}
+
 /* app container */
 .app-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem 1rem;
+  width: auto;
+  height: auto;
 }
 
 /* main panel */
@@ -37,7 +53,7 @@ body {
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   color: #3399c5;
-  margin-right: 15px;
+  margin-left: 5rem;
 }
 
 /* list */
@@ -65,14 +81,7 @@ body {
   text-decoration: line-through;
 }
 
-/**  Task image*/
 
-.task-img{
-  border: 1px solid #be3d5b;
-  size: 1px;
-  width: 50px;
-  margin-left: 15px;
-}
 
 /** Add new task**/
 
@@ -81,13 +90,15 @@ body {
   border-radius: 10px;
   margin: 5px;
   align-items: center;
+  width:21rem ;
+  
 }
 .add-task:hover {
   border: 3px solid #be3d5b;
 }
 input {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 0.92rem;
   border: 1px solid #e2cdd2;
   padding: 8px;
   margin: 5px;
@@ -101,7 +112,7 @@ input {
   margin-left: 50px;
   cursor: pointer;
   background-color: #65adcc;
-  border-radius: 16px ;
+  border-radius: 16px;
 }
 
 /* checkbox */
@@ -134,7 +145,8 @@ input {
 .delete-task {
   border-radius: 4px;
   border: 2px solid #be1515;
-  width: 13%;
+
+  width: 3.2rem;
   align-items: center;
   cursor: pointer;
 }

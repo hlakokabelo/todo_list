@@ -1,7 +1,7 @@
 import './ToDoList.css'
 import { useState, useEffect } from 'react'
-import { addTask, getTasks, deleteTask, upDateTask } from './components/toDoList'
-import taskImg from './assets/icon.jpg'
+import { addTask, getTasks, deleteTask, upDateTask } from './toDoListController'
+import taskImg from '../assets/icon.jpg'
 
 
 
@@ -11,7 +11,6 @@ function ToDoList() {
   const [todos, setTodos] = useState([])
   const [newTask, setNewTask] = useState('')
   useEffect(() => {
-    
     handleGetTasks()
   }, [])
 
@@ -23,17 +22,17 @@ function ToDoList() {
   function handleInputChange(event) {
     setNewTask(event.target.value)
   }
-  
+
   const handleAddTask = async () => {
     if (newTask !== '') {
       const task = {
         body: newTask,
         completed: false,
-        $id: 'temp'
+        id:''
       }
       try {
         const response = await addTask(task)
-       
+
         task.id = response.$id
         setTodos(t => [...t, task])
       } catch (error) {
@@ -68,13 +67,13 @@ function ToDoList() {
 
 
   return (
-    <div className="app-container" id="">
+    <div className="app-container">
       <main className="to-selection">
         <div className="title-img">
           <h2 className="selection-title">
-            All Tasks
-          <img className='task-img' src={taskImg} alt="" srcset="" />
-        </h2></div>
+            All Tasks </h2>
+          <img className='task-img' src={taskImg} alt=""/>
+        </div>
 
         <div className="todo-list">
           <div className="add-task">
