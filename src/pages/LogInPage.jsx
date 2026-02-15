@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function LogInPage() {
   const [email, setEmail] = useState("");
@@ -8,6 +9,8 @@ function LogInPage() {
     e.preventDefault();
     console.log({ email, password });
   };
+
+  const navigate = useNavigate()
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-135deg via-#0f172a to-#020617">
@@ -51,9 +54,9 @@ function LogInPage() {
 
         <p className="text-center text-white/70 mt-6 text-sm">
           Don’t have an account?{" "}
-          <a className="underline cursor-pointer hover:text-white" href="/register">
+          <span className="underline cursor-pointer hover:text-white" onClick={()=>navigate("/register")}>
             Sign up
-          </a>
+          </span>
         </p>
       </div>
     </div>

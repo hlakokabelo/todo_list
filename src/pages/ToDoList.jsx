@@ -1,6 +1,6 @@
 import './ToDoList.css'
 import { useState, useEffect } from 'react'
-import { addTask, getTasks, deleteTask, upDateTask } from './toDoListController'
+import { addTask, getTasks, deleteTask, upDateTask } from '../services/toDoListService'
 import taskImg from '../assets/icon.jpg'
 
 

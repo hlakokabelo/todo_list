@@ -1,18 +1,19 @@
 import React from 'react'
-import './navBar.css'
+import { useNavigate } from 'react-router-dom'
+
 
 const Navbar = () => {
-
+const nav = useNavigate()
   const userName = 'kabelo'
   const logout = () => {
-    alert("logging out")
+    nav('login')
   }
   return (
     <>
-      <div className="main-nav">
-        <div className="nav-header">
+      <div className="text-end w-5/7">
+        <div className="">
           Hi {userName} <span style={{color:'black'}}>|</span>
-          <span className='logout-btn' onClick={logout}> Logout</span>
+          <span className='cursor-pointer hover:text-blue-700' onClick={logout}> Logout</span>
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 function SignUpPage() {
     const [form, setForm] = useState({
         name: "",
@@ -6,6 +7,8 @@ function SignUpPage() {
         password: "",
         confirmPassword: "",
     });
+      const navigate = useNavigate()
+
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -79,9 +82,9 @@ function SignUpPage() {
 
                 <p className="text-center text-white/70 mt-6 text-sm">
                     Already have an account?{" "}
-                    <a className="underline cursor-pointer hover:text-white" href="/login">
+                    <span className="underline cursor-pointer hover:text-white" onClick={()=>navigate("/login")}>
                         Log in
-                    </a>
+                    </span>
                 </p>
             </div>
         </div>
